@@ -2,10 +2,10 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import List
-from flask_cors import CORS
+ 
 
 app = FastAPI()
-CORS(app)
+
 # CORS setup
 app.add_middleware(
     CORSMiddleware,
